@@ -15,6 +15,3 @@ class NiceScraper
 
 
 end
-
-test = NiceScraper.new("http://www.supersilly.com/cgi/multicomp.cgi")
-test.scrape
