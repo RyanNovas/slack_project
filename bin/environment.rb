@@ -3,11 +3,9 @@ require 'bundler/setup'
 
 Bundler.require
 
-require_relative "../lib/pokemon"
-require_relative "../lib/scraper"
-require_relative "sql_runner"
+require_all "../lib/"
 
 require 'rubygems'
-require 'nokogiri' 
+require 'nokogiri'
 require 'pry'
-require 'sqlite3'
+require 'open-uri'
