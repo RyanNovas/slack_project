@@ -1,0 +1,2 @@
+class SurrealScraperController < ApplicationController
+end

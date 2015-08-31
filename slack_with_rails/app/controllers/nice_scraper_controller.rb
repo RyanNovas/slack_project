@@ -1,0 +1,2 @@
+class NiceScraperController < ApplicationController
+end

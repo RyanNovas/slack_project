@@ -1,0 +1,2 @@
+module MeanScraperHelper
+end
