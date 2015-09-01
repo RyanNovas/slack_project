@@ -2,8 +2,8 @@ class MeanScraper < ActiveRecord::Base
   include Scrape
   @@website = "http://www.insultgenerator.org"
 
-  def initialize
-    @page = scraper(@@website).css(".wrap")
+  def scrape
+    @page = scraper(@@website).css(".wrap").text
   end
 
   # def scrape

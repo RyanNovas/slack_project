@@ -30,6 +30,8 @@ gem 'activerecord'
 
 gem 'nokogiri'
 
+gem 'rails-pry'
+
 
 
 # Use ActiveModel has_secure_password
