@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   get '/surrealscraper', to: 'surreal_scraper#say'
 
-  get '/dummy', to: 'dummy#test'
+  post '/dummy', to: 'dummy#test'
 
 
   # Example of regular route:
