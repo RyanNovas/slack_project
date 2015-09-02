@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   get '/surrealscraper', to: 'surreal_scraper#say'
   post '/surrealscraper', to: 'surreal_scraper#say'
 
+  get  '/help', to: 'help#say'
+  post '/help', to: 'help#say'
+
   post '/dummy', to: 'dummy#test'
 
   get '/dummy', to: 'dummy#test'
