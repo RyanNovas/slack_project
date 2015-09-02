@@ -9,13 +9,9 @@ development:
   encoding: unicode
   database: slack_project_development
   pool: 5
-  username:
-  password:
 
 test:
   adapter: postgresql
   encoding: unicode
   database: slack_project_test
   pool: 5
-  username:
-  password:

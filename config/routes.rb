@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   post '/dummy', to: 'dummy#test'
 
+  get '/dummy', to: 'dummy#test'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
