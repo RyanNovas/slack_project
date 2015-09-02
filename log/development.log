@@ -3057,3 +3057,112 @@ Started GET "/meanscraper" for 127.0.0.1 at 2015-09-02 18:16:31 -0400
 Processing by MeanScraperController#say as HTML
   Rendered mean_scraper/say.html.erb (0.1ms)
 Completed 200 OK in 161ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-02 18:50:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.8ms)
+Completed 500 Internal Server Error in 684ms
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/views/mean_scraper/say.html.erb:1: syntax error, unexpected tIVAR, expecting ')'
+...ams[:user_name]} says \n" @view );@output_buffer.safe_append...
+...                               ^):
+  app/views/mean_scraper/say.html.erb:1: syntax error, unexpected tIVAR, expecting ')'
+  app/controllers/mean_scraper_controller.rb:5:in `say'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (60.1ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-02 18:50:33 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.4ms)
+Completed 500 Internal Server Error in 152ms
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/views/mean_scraper/say.html.erb:1: syntax error, unexpected tIVAR, expecting ')'
+...ams[:user_name]} says \n" @view );@output_buffer.safe_append...
+...                               ^):
+  app/views/mean_scraper/say.html.erb:1: syntax error, unexpected tIVAR, expecting ')'
+  app/controllers/mean_scraper_controller.rb:5:in `say'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-02 18:52:08 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.8ms)
+Completed 500 Internal Server Error in 153ms
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/views/mean_scraper/say.html.erb:1: syntax error, unexpected tIVAR, expecting ')'
+...nd=( "#{@params} says \n" @view );@output_buffer.safe_append...
+...                               ^):
+  app/views/mean_scraper/say.html.erb:1: syntax error, unexpected tIVAR, expecting ')'
+  app/controllers/mean_scraper_controller.rb:5:in `say'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.9ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-02 18:52:57 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.7ms)
+Completed 500 Internal Server Error in 174ms
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/views/mean_scraper/say.html.erb:1: syntax error, unexpected tIVAR, expecting ')'
+...uffer.append=( " says \n" @view );@output_buffer.safe_append...
+...                               ^):
+  app/views/mean_scraper/say.html.erb:1: syntax error, unexpected tIVAR, expecting ')'
+  app/controllers/mean_scraper_controller.rb:5:in `say'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (60.2ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-02 18:53:12 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.6ms)
+Completed 200 OK in 161ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-02 18:53:20 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.5ms)
+Completed 500 Internal Server Error in 151ms
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/views/mean_scraper/say.html.erb:1: syntax error, unexpected tIVAR, expecting ')'
+..._buffer.append=( " says " @view );@output_buffer.safe_append...
+...                               ^):
+  app/views/mean_scraper/say.html.erb:1: syntax error, unexpected tIVAR, expecting ')'
+  app/controllers/mean_scraper_controller.rb:5:in `say'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.5ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-02 18:53:56 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.6ms)
+Completed 200 OK in 133ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-02 18:54:03 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.6ms)
+Completed 200 OK in 175ms (Views: 3.4ms | ActiveRecord: 0.0ms)

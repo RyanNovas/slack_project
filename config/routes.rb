@@ -7,12 +7,16 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get '/meanscraper', to: 'mean_scraper#say'
+  post '/meanscraper', to: 'mean_scraper#say'
 
   get '/nicescraper', to: 'nice_scraper#say'
+  post '/nicescraper', to: 'nice_scraper#say'
 
   get '/shakespearescraper', to: 'shakespeare_scraper#say'
+  post '/shakespearescraper', to: 'shakespeare_scraper#say'
 
   get '/surrealscraper', to: 'surreal_scraper#say'
+  post '/surrealscraper', to: 'surreal_scraper#say'
 
   post '/dummy', to: 'dummy#test'
 
