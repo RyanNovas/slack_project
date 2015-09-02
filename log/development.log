@@ -2034,3 +2034,156 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-01 19:47:53 -04
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 19:47:53 -0400
+
+
+Started GET "/nicescraper" for 127.0.0.1 at 2015-09-01 19:48:42 -0400
+Processing by NiceScraperController#say as HTML
+  Rendered nice_scraper/say.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1001ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 19:48:43 -0400
+
+
+Started GET "/surrealscraper" for 127.0.0.1 at 2015-09-01 19:48:59 -0400
+Processing by SurrealScraperController#say as HTML
+  Rendered surreal_scraper/say.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 721ms (Views: 74.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:00 -0400
+
+
+Started GET "/shakespearescraper" for 127.0.0.1 at 2015-09-01 19:49:10 -0400
+Processing by ShakespeareScraperController#say as HTML
+  Rendered shakespeare_scraper/say.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 788ms (Views: 66.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 19:49:11 -0400
