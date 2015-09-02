@@ -2890,3 +2890,118 @@ Started GET "/meanscraper" for 127.0.0.1 at 2015-09-02 17:52:12 -0400
 Processing by MeanScraperController#say as HTML
   Rendered mean_scraper/say.html.erb (1.2ms)
 Completed 200 OK in 292ms (Views: 3.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-02 18:05:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 190ms (Views: 175.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dummy.css?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/dummy.js?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-02 18:05:07 -0400
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/dummy.css?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/dummy.js?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-02 18:06:10 -0400
