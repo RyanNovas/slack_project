@@ -1,0 +1,2 @@
+module CleanPickupScraperHelper
+end
