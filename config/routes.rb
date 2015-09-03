@@ -18,6 +18,11 @@ Rails.application.routes.draw do
   get '/surrealscraper', to: 'surreal_scraper#say'
   post '/surrealscraper', to: 'surreal_scraper#say'
 
+  get '/pickupscraper', to: 'pickup_scraper#say'
+  post '/pickupscraper', to: 'pickup_scraper#say'
+
+
+
   get  '/help', to: 'help#say'
   post '/help', to: 'help#say'
 

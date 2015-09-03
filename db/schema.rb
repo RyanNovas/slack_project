@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150902232954) do
+ActiveRecord::Schema.define(version: 20150902235351) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,11 @@ ActiveRecord::Schema.define(version: 20150902232954) do
   end
 
   create_table "nice_scrapers", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pickup_scrapers", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
