@@ -33,6 +33,18 @@ gem 'nokogiri'
 
 gem 'rails-pry'
 
+gem 'rest-client'
+
+gem 'mime-types'
+
+gem 'netrc'
+
+gem 'http-cookie'
+
+
+
+
+
 
 
 # Use ActiveModel has_secure_password

@@ -21,6 +21,9 @@ Rails.application.routes.draw do
   get '/pickupscraper', to: 'pickup_scraper#say'
   post '/pickupscraper', to: 'pickup_scraper#say'
 
+  get '/cleanpickupscraper', to: 'clean_pickup_scraper#say'
+  post '/cleanpickupscraper', to: 'clean_pickup_scraper#say'
+
 
 
   get  '/help', to: 'help#say'

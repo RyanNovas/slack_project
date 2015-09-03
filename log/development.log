@@ -4482,3 +4482,1133 @@ Started GET "/pickupscraper" for 127.0.0.1 at 2015-09-02 21:42:05 -0400
 Processing by PickupScraperController#say as HTML
   Rendered pickup_scraper/say.html.erb (0.4ms)
 Completed 200 OK in 252ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:10:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.4) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (60.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCleanPickupScrapers (20150903020249)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (24.7ms)[0m  [1mCREATE TABLE "clean_pickup_scrapers" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150903020249"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:11:18 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActionController::RoutingError (uninitialized constant CleanpickupScraperController):
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (20.5ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.1ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:11:20 -0400
+
+ActionController::RoutingError (uninitialized constant CleanpickupScraperController):
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.2ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:11:21 -0400
+
+ActionController::RoutingError (uninitialized constant CleanpickupScraperController):
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ryannovas/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.1ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:11:54 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.7ms)
+Completed 200 OK in 330ms (Views: 3.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:11:57 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 249ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:11:58 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.1ms)
+Completed 200 OK in 250ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:12:00 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.1ms)
+Completed 200 OK in 839ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:12:02 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.1ms)
+Completed 200 OK in 249ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:12:06 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 252ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:12:07 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.1ms)
+Completed 200 OK in 318ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:12:09 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.1ms)
+Completed 200 OK in 254ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:12:10 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 265ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:12:12 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.1ms)
+Completed 200 OK in 270ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:12:16 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.1ms)
+Completed 200 OK in 261ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:13:04 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.1ms)
+Completed 200 OK in 1197ms (Views: 2.5ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:13:06 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 177ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:13:27 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.8ms)
+Completed 200 OK in 145ms (Views: 3.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:14:39 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (5.3ms)
+Completed 200 OK in 168ms (Views: 9.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:15:03 -0400
+Processing by CleanPickupScraperController#say as HTML
+Completed 500 Internal Server Error in 142ms
+
+NoMethodError (undefined method `each' for #<String:0x007ff60c6531f0>):
+  app/models/clean_pickup_scraper.rb:7:in `scrape'
+  app/controllers/clean_pickup_scraper_controller.rb:5:in `say'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.6ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:15:15 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 144ms (Views: 2.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:15:19 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.4ms)
+Completed 200 OK in 130ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:15:20 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 141ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:15:21 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 147ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:15:22 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 1171ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:17:00 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (2.3ms)
+Completed 200 OK in 350ms (Views: 16.9ms | ActiveRecord: 47.1ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:17:04 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (1.0ms)
+Completed 200 OK in 260ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:17:08 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.3ms)
+Completed 200 OK in 257ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-02 22:17:10 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.3ms)
+Completed 200 OK in 208ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-03 17:15:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <%= "#{@params[:user_name]} says \n"  %>
+    2: <%= @view %>
+  app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___3081504617176486356_70156104144920'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.1ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:15:19 -0400
+Processing by DummyController#test as HTML
+Completed 500 Internal Server Error in 6ms
+
+NameError (undefined local variable or method `payload' for #<DummyController:0x007f9cfb339038>):
+  app/controllers/dummy_controller.rb:16:in `test'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (70.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:15:35 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1494ms (Views: 832.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clean_pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/dummy.css?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/clean_pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/dummy.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-03 17:15:37 -0400
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:16:46 -0400
+Processing by DummyController#test as HTML
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `map' for #<String:0x007f9cfb2dbd98>):
+  app/controllers/dummy_controller.rb:15:in `test'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.9ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:20:32 -0400
+Processing by DummyController#test as HTML
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `map' for #<String:0x007f9cfe2409d0>):
+  app/controllers/dummy_controller.rb:15:in `test'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.1ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:20:33 -0400
+Processing by DummyController#test as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `map' for #<String:0x007f9cfd900dc0>):
+  app/controllers/dummy_controller.rb:15:in `test'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (99.4ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:21:45 -0400
+Processing by DummyController#test as HTML
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `map' for #<String:0x007f9cf9b2fac8>):
+  app/controllers/dummy_controller.rb:15:in `test'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.7ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:21:46 -0400
+Processing by DummyController#test as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `map' for #<String:0x007f9cf9cf5cb8>):
+  app/controllers/dummy_controller.rb:15:in `test'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (91.5ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:21:48 -0400
+Processing by DummyController#test as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `map' for #<String:0x007f9cf9fc2400>):
+  app/controllers/dummy_controller.rb:15:in `test'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.8ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:22:08 -0400
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...WBG/09XMe0Gc5xiYVpPH6ud4tfQx'), payload)
+...                               ^):
+  app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.4ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:22:09 -0400
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...WBG/09XMe0Gc5xiYVpPH6ud4tfQx'), payload)
+...                               ^):
+  app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (66.4ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:25:46 -0400
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...WBG/09XMe0Gc5xiYVpPH6ud4tfQx'), payload)
+...                               ^):
+  app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.7ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:25:48 -0400
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...WBG/09XMe0Gc5xiYVpPH6ud4tfQx'), payload)
+...                               ^):
+  app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.5ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:29:32 -0400
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...WBG/09XMe0Gc5xiYVpPH6ud4tfQx'), payload)
+...                               ^):
+  app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (81.2ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:29:33 -0400
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...WBG/09XMe0Gc5xiYVpPH6ud4tfQx'), payload)
+...                               ^):
+  app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (112.3ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:29:55 -0400
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...WBG/09XMe0Gc5xiYVpPH6ud4tfQx'), payload)
+...                               ^):
+  app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (64.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:29:56 -0400
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...WBG/09XMe0Gc5xiYVpPH6ud4tfQx'), payload)
+...                               ^):
+  app/controllers/dummy_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (126.2ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:44:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/controllers/dummy_controller.rb:17: syntax error, unexpected ',', expecting keyword_end
+...WBG/09XMe0Gc5xiYVpPH6ud4tfQx'), payload)
+...                               ^):
+  app/controllers/dummy_controller.rb:17: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.9ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.3ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:44:26 -0400
+Processing by DummyController#test as HTML
+Completed 500 Internal Server Error in 281ms
+
+RestClient::InternalServerError (500 Internal Server Error):
+  app/controllers/dummy_controller.rb:15:in `test'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (61.4ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:44:36 -0400
+Processing by DummyController#test as HTML
+Completed 500 Internal Server Error in 250ms
+
+RestClient::InternalServerError (500 Internal Server Error):
+  app/controllers/dummy_controller.rb:15:in `test'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.2ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:20 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1222ms (Views: 359.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/clean_pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/dummy.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/clean_pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/dummy.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:22 -0400
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:37 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 425ms (Views: 132.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dummy.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/clean_pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/clean_pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/dummy.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:38 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 402ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dummy.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/clean_pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/clean_pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/dummy.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:39 -0400
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:40 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 428ms (Views: 136.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:40 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 448ms (Views: 142.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:41 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 418ms (Views: 150.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:41 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 386ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:41 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 411ms (Views: 144.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:42 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 369ms (Views: 114.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:42 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 376ms (Views: 105.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:43 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 388ms (Views: 130.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:43 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 814ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:44 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 516ms (Views: 116.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:44 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 388ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:45 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 362ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:45 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 427ms (Views: 103.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:46 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 499ms (Views: 127.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-03 17:47:46 -0400
+Processing by DummyController#test as HTML
+  Rendered dummy/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 477ms (Views: 128.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dummy.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/clean_pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/clean_pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/dummy.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-03 17:47:47 -0400
