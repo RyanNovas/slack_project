@@ -31,7 +31,7 @@ gem 'activerecord'
 
 gem 'nokogiri'
 
-gem 'rails-pry'
+gem 'pry-rails'
 
 gem 'rest-client'
 

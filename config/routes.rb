@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
+  post '/dummy', to: 'dummy#test'
+  get '/dummy', to: 'dummy#test'
+
   get '/meanscraper', to: 'mean_scraper#say'
   post '/meanscraper', to: 'mean_scraper#say'
 
@@ -29,9 +32,7 @@ Rails.application.routes.draw do
   get  '/help', to: 'help#say'
   post '/help', to: 'help#say'
 
-  post '/dummy', to: 'dummy#test'
 
-  get '/dummy', to: 'dummy#test'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

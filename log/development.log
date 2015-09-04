@@ -5936,3 +5936,22 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-04 13:29:32 -04
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-04 13:29:32 -0400
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-04 13:55:37 -0400
+Processing by DummyController#test as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `pry' for #<Binding:0x007fe78d9a2cd0>):
+  app/controllers/dummy_controller.rb:15:in `test'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (66.6ms)
+
+
+Started GET "/dummy" for 127.0.0.1 at 2015-09-04 13:58:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DummyController#test as HTML
