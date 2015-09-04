@@ -5955,3 +5955,47 @@ NoMethodError (undefined method `pry' for #<Binding:0x007fe78d9a2cd0>):
 Started GET "/dummy" for 127.0.0.1 at 2015-09-04 13:58:47 -0400
   [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by DummyController#test as HTML
+Completed   in 1560388ms
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-04 14:38:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (1.1ms)
+Completed 500 Internal Server Error in 233ms
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/views/clean_pickup_scraper/say.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+...@output_buffer.append=( @view "\n\n\n");@output_buffer.safe_...
+...                               ^):
+  app/views/clean_pickup_scraper/say.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/controllers/clean_pickup_scraper_controller.rb:6:in `say'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (66.1ms)
+
+
+Started GET "/cleanpickupscraper" for 127.0.0.1 at 2015-09-04 14:39:15 -0400
+Processing by CleanPickupScraperController#say as HTML
+  Rendered clean_pickup_scraper/say.html.erb (0.5ms)
+Completed 200 OK in 532ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-04 14:39:51 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.8ms)
+Completed 500 Internal Server Error in 1050ms
+
+SyntaxError (/Users/ryannovas/Dev/slack_project/app/views/mean_scraper/say.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+...@output_buffer.append=( @view "\n\n\n");@output_buffer.safe_...
+...                               ^):
+  app/views/mean_scraper/say.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/controllers/mean_scraper_controller.rb:5:in `say'
+
+
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/ryannovas/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.4ms)
