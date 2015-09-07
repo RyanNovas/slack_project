@@ -6516,3 +6516,9 @@ Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:23:53 -0400
 Processing by MeanScraperController#say as HTML
   Rendered mean_scraper/say.html.erb (0.2ms)
 Completed 200 OK in 91ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2015-09-07 17:36:53 -0400
+Processing by HelpController#say as HTML
+  Rendered help/say.html.erb (2.3ms)
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 0.0ms)
