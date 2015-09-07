@@ -6528,3 +6528,9 @@ Started GET "/help" for 127.0.0.1 at 2015-09-07 17:37:50 -0400
 Processing by HelpController#say as HTML
   Rendered help/say.html.erb (0.6ms)
 Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2015-09-07 17:44:52 -0400
+Processing by HelpController#say as HTML
+  Rendered help/say.html.erb (1.3ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
