@@ -6345,3 +6345,174 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-07 17:16:55 -04
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-07 17:16:55 -0400
+
+
+Started GET "/help" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+Processing by HelpController#say as HTML
+  Rendered help/say.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 139ms (Views: 130.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clean_pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/dummy.css?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/mean_scraper.css?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/nice_scraper.css?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/pickup_scraper.css?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/shakespeare_scraper.css?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/surreal_scraper.css?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/clean_pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/dummy.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/mean_scraper.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/nice_scraper.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/pickup_scraper.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/shakespeare_scraper.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/surreal_scraper.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-07 17:20:15 -0400
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:20:18 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 201ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:20:21 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 110ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:20:21 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 179ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:20:22 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 94ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:20:23 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 113ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:20:24 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 150ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:20:25 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 183ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:20:25 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 152ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:20:26 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.3ms)
+Completed 200 OK in 179ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:20:27 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 177ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:23:48 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 162ms (Views: 3.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:23:50 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 157ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:23:51 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 95ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:23:51 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 147ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:23:52 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 149ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meanscraper" for 127.0.0.1 at 2015-09-07 17:23:53 -0400
+Processing by MeanScraperController#say as HTML
+  Rendered mean_scraper/say.html.erb (0.2ms)
+Completed 200 OK in 91ms (Views: 2.9ms | ActiveRecord: 0.0ms)

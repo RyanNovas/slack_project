@@ -1,7 +1,7 @@
 class SurrealScraperController < ApplicationController
   def say
       @params = params
-      @view = SurrealScraper.new.scrape.gsub("’", "'")
+      @view = SurrealScraper.new.scrape.gsub("&#39;", "'")
           render layout: false
 
     end

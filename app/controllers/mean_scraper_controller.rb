@@ -1,8 +1,7 @@
 class MeanScraperController < ApplicationController
   def say
       @params = params
-      @view = MeanScraper.new.scrape.gsub("’", "'")
+      @view = MeanScraper.new.scrape.gsub("&#39;", "'")
           render layout: false
-      # @view = Nokogiri::HTML(open("http://guides.rubyonrails.org/active_record_basics.html"))
     end
   end
