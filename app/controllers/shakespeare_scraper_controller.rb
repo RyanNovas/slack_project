@@ -2,6 +2,6 @@ class ShakespeareScraperController < ApplicationController
   def say
       @params = params
       @view = ShakespeareScraper.new.scrape.gsub("&#39;", "'")
-        #  render layout: false
+          render layout: false
     end
 end
